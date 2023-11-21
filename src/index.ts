@@ -1,4 +1,3 @@
-import ClientComponent from './ClientComponent'
-import ServerComponent from './ServerComponent'
+import DevProvider from './DevProvider'
 
-export { ClientComponent, ServerComponent }
+export default DevProvider

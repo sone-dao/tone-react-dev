@@ -1,13 +1,9 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
+import React from 'react';
 
-interface IClientComponentProps {
-    defaultText?: string;
+interface IDevProviderProps {
+    children: React.ReactNode;
 }
-declare function ClientComponent({ defaultText, }: IClientComponentProps): react_jsx_runtime.JSX.Element;
+declare function DevProvider({ children }: IDevProviderProps): react_jsx_runtime.JSX.Element;
 
-interface IServerComponentProps {
-    text: string;
-}
-declare function ServerComponent({ text }: IServerComponentProps): react_jsx_runtime.JSX.Element;
-
-export { ClientComponent, ServerComponent };
+export { DevProvider as default };
